@@ -1,11 +1,6 @@
-import { bool } from 'prop-types';
 import React from 'react';
 import { findDOMNode } from 'react-dom';
 import spyOnComponent from 'spy-on-component';
-
-export const PropTypes = {
-  autoFocus: bool
-};
 
 export default function makeAutoFocusable(instance) {
   spyOnComponent(instance, {
